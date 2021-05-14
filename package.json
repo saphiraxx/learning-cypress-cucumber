@@ -1,0 +1,25 @@
+{
+  "name": "learning-cypress-cucumber",
+  "version": "1.0.0",
+  "description": "Estudando Cypress com Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saphiraxx/learning-cypress-cucumber.git"
+  },
+  "author": "Saphira Xavier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saphiraxx/learning-cypress-cucumber/issues"
+  },
+  "homepage": "https://github.com/saphiraxx/learning-cypress-cucumber#readme",
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.1.0"
+  },
+  "dependencies": {
+    "cypress": "^7.3.0"
+  }
+}
