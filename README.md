@@ -4,14 +4,14 @@ Projeto de estudo com Cypress e Cucumber para teste UI.
 
 ## Índice
 
-- [Pré-requisito](#pre-requisito)
-- [Configuração](#configuracao)
-- [Como rodar?](#como-rodar?)
-- [Licença](#licenca)
+- [Pré-requisitos](#pré-requisitos)
+- [Configuração](#configuração)
+- [Como rodar os testes](#como-rodar-os-testes)
+- [Licença](#licença)
 
 ---
 
-## Pré-requisito
+## Pré-requisitos
 
 - [Instalar Node e NPM](https://nodejs.org/en/)
 - [Instalar Vscode ou outra IDE](https://code.visualstudio.com/download)
@@ -32,7 +32,7 @@ Após clonar o repositório:
 $ npm ci
 ```
 
-## Como rodar?
+## Como rodar os testes
 
 Como rodar os testes do repositório.
 > rodar no modo interativo do cypress
@@ -62,4 +62,4 @@ $ npm run cy:firefox
 [![Licença](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT licença](http://opensource.org/licenses/mit-license.php)**
-- Copyright 2021 © <a href="https://www.linkedin.com/in/saphira-xavier-02b3841ab/" target="_blank">Saphira Xavier</a>.
+- Direito autoral - 2021 © <a href="https://www.linkedin.com/in/saphira-xavier-02b3841ab/" target="_blank">Saphira Xavier</a>.
