@@ -4,22 +4,34 @@
   "description": "Estudando Cypress com Cucumber",
   "main": "index.js",
   "scripts": {
-    "cy:open": "npx cypress open"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --spec cypress/integration/*.feature",
+    "cy:build:run": "npm run simple_build && cypress run --spec cypress/integration/*.feature",
+    "clean": "rm -rf ./node_modules && rm -rf ./cypress/screenshots",
+    "simple_build": "npm run clean && npm i"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saphiraxx/learning-cypress-cucumber.git"
   },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "testing"
+  ],
+  "homepage": "https://github.com/saphiraxx/learning-cypress-cucumber#readme",
   "author": "Saphira Xavier",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/saphiraxx/learning-cypress-cucumber/issues"
   },
-  "homepage": "https://github.com/saphiraxx/learning-cypress-cucumber#readme",
-  "devDependencies": {
-    "cypress-cucumber-preprocessor": "^4.1.0"
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
   },
   "dependencies": {
-    "cypress": "^7.3.0"
+    "cypress": "~7.3.0"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "~4.1.0"
   }
 }

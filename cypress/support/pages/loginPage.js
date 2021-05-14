@@ -1,35 +1,30 @@
 /// <reference types="Cypress" />
 
-
-class elements {
-    inputEmail = () => { return 'input[name="email"]' }
-    inputPass = () => { return 'input[name="password"]' }
-    btnEntrar = () => { return 'button[data-testid="entrar"]' }
-}
-
-export default elements;
-
+import loginElements from '../pages/elements/loginElements'
+const el = new loginElements
 class loginPage {
 
     doLogin(email, password) {
-        typeEmail(email)
-        typePassword(password)
-        clickEntrar()
+        this.fillEmail(email)
+        this.fillPassword(password)
+        this.clickEntrar()
     }
 
-    typeEmail(email) {
-        cy.get(elements.inputEmail())
+    fillEmail(email) {
+        cy.get(el.inputEmail())
+            .clear()
             .type(email)
     }
 
-    typePassword(password) {
-        cy.get(elements.inputPass())
+    fillPassword(password) {
+        cy.get(el.inputPass())
+            .clear()
             .type(password)
     }
 
     clickEntrar() {
-        cy.get(elements.btnEntrar())
-            .click()
+        cy.get(el.btnEntrar())
+            .click();
     }
 }
 
